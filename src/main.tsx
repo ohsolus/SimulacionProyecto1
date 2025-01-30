@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthProvider from "./components/authProvider";
 import ProtectedRoute from "./components/protectedRoute";
 import { Login } from "./features/auth/pages/login";
-import { HomePage } from "./features/home/pages/home";
 import { Register } from "./features/auth/pages/register";
 import { BasePage } from "./components/ui/base-page";
 import { ErrorPage } from "./components/ui/error-page";

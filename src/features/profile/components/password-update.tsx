@@ -1,19 +1,10 @@
-/** */
-//import { Label } from "@radix-ui/react-label";
-
 import { PasswordField } from "@/components/password-field";
 import { Button } from "@/components/ui/button";
-
-//import AddItem from "./add-item";
-import { Avatar } from "@radix-ui/react-avatar";
-import { AvatarFallback } from "@/components/ui/avatar";
 import IUserRegisterData from "../../../types/User";
 import { useEffect, useState } from "react";
 import UserService from "@/service/UserService";
-import { TextField } from "@/components/text-field";
 
 export function PasswordUpdate() {
-  const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [message, setMessage] = useState("");

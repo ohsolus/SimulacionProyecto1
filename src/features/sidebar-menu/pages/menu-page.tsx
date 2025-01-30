@@ -1,15 +1,6 @@
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
 import { Link } from "react-router-dom";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-} from "@radix-ui/react-dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { LifeBuoy, LogOut, MenuIcon, SidebarClose, User } from "lucide-react";
+import { SidebarClose } from "lucide-react";
 import { SidebarData } from "../components/sidebar";
 import { useState } from "react";
 

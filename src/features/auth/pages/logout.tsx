@@ -1,4 +1,3 @@
-import { Main } from "@/components/ui/main";
 import { Card } from "@/components/ui/card";
 import { useEffect } from "react";
 import { toast } from "react-toastify";

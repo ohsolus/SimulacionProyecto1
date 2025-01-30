@@ -1,17 +1,10 @@
-/** */
-//import { Label } from "@radix-ui/react-label";
-
 import { TextField } from "@/components/text-field";
 import { Button } from "@/components/ui/button";
-
-//import AddItem from "./add-item";
 import { Avatar } from "@radix-ui/react-avatar";
 import { AvatarFallback } from "@/components/ui/avatar";
 import IUserRegisterData from "../../../types/User";
 import { useEffect, useState } from "react";
 import UserService from "@/service/UserService";
-import { Label } from "@/components/ui/label";
-
 export function GeneralForm() {
   const [userData, setUserData] = useState<IUserRegisterData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -162,115 +155,3 @@ export function GeneralForm() {
     </>
   );
 }
-
-/**/
-
-////////
-/*
-import { useState, useEffect, ChangeEvent } from "react";
-import UserService from "@/service/UserService";
-import IUserRegisterData from "../../../types/User";
-import { Button } from "@/components/ui/button";
-import { TextField } from "@/components/text-field";
-import { PasswordField } from "@/components/password-field";
-
-function GeneralForm() {
-  const userId = localStorage.getItem("userId"); // Obtener el ID del usuario logueado desde localStorage
-  const [profile, setProfile] = useState<IUserRegisterData | null>(null);
-  const [submitted, setSubmitted] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (userId) {
-      UserService.get(userId)
-        .then((response) => {
-          setProfile(response.data);
-        })
-        .catch((error) => {
-          console.error("Error al obtener perfil:", error);
-        });
-    } else {
-      console.error("No se encontró el ID del usuario en localStorage");
-    }
-  }, [userId]);
-
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    if (profile) {
-      setProfile({ ...profile, [name]: value });
-    }
-  };
-
-  const saveProfile = () => {
-    if (userId && profile) {
-      const data = {
-        name: profile.name,
-        email: profile.email,
-        password: profile.password || undefined, // Solo enviar si ha cambiado
-      };
-
-      UserService.update(userId, data)
-        .then(() => {
-          setSubmitted(true);
-          console.log("Perfil actualizado exitosamente.");
-        })
-        .catch((error) => {
-          console.error("Error al actualizar perfil:", error);
-        });
-    }
-  };
-
-  return (
-    <div className="submit-form w-full space-y-6">
-      {profile && (
-        <div className="space-y-4">
-          <h1>Hi friends</h1>
-          <div className="form-group" onChange={handleInputChange}>
-            <TextField
-              id="name"
-              value={profile.name || ""}
-              labelProps={{ children: "Nombre" }}
-              inputProps={{ placeholder: "Jhon Doe" }}
-            />
-          </div>
-
-          <div className="form-group" onChange={handleInputChange}>
-            <TextField
-              id="email"
-              value={profile.email || ""}
-              labelProps={{ children: "Email" }}
-              inputProps={{
-                placeholder: "ej: johndoe@gmail.com",
-                type: "email",
-              }}
-            />
-          </div>
-
-          <div className="form-group" onChange={handleInputChange}>
-            <PasswordField
-              id="password"
-              value={profile.password || ""}
-              labelProps={{ children: "Contraseña (Opcional)" }}
-              inputProps={{ autoComplete: "new-password" }}
-            />
-          </div>
-
-          <div className="form-group">
-            <TextField
-              id="role"
-              value={profile.role || ""}
-              labelProps={{ children: "Rol" }}
-              inputProps={{ readOnly: true }}
-            />
-          </div>
-
-          <Button onClick={saveProfile} className="w-full">
-            Guardar cambios
-          </Button>
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default GeneralForm;
-*/

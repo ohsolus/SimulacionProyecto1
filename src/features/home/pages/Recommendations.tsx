@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Main } from "@/components/ui/main";
 import React from "react";
 import "react-datepicker/dist/react-datepicker.css";

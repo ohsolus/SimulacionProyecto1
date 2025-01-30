@@ -12,7 +12,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
-import MenuPage from "@/features/sidebar-menu/pages/menu-page";
 import { SidebarData } from "@/features/sidebar-menu/components/sidebar";
 
 const NavBar = () => {
@@ -20,10 +19,6 @@ const NavBar = () => {
   const showSidebar = () => setSidebar(!sidebar);
   const { handleLogout } = useAuth();
   const navigate = useNavigate();
-
-  const handleSupport = () => {
-    navigate("/support");
-  };
 
   const handleLogoutSession = () => {
     handleLogout;

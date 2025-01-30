@@ -6,7 +6,6 @@ import IUserLoginData from "../../../types/Login";
 import { ChangeEvent, useState } from "react";
 import LoginService from "@/service/LoginService";
 import { useNavigate } from "react-router-dom";
-import { Console } from "console";
 
 export default function SignInPage() {
   const initialLoginState = {

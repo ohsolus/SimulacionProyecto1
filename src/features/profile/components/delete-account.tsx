@@ -1,7 +1,4 @@
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Label } from "@radix-ui/react-label";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 import UserService from "@/service/UserService";
 
 import {
@@ -14,7 +11,6 @@ import {
   AlertDialogCancel,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
 import { useState } from "react";
 
 export function DeleteAccount() {
