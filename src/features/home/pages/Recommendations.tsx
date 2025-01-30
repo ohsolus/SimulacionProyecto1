@@ -15,7 +15,7 @@ const Recommendations: React.FC = () => {
         <div className="space-y-5 px-4 max-w-5xl ml-12 text-left">
           <div key={1} className="flex items-center bg-gray-700 p-5 rounded-lg">
             <img
-              src="src\assets\ab67616d0000b27374216535ac1fbf75fcc2fdb7.jpg"
+              src="https://0.soompi.io/wp-content/uploads/sites/8/2017/07/13091335/kard-2-e1499962430827.jpg"
               alt={`Recommended Song ${1}`}
               className="rounded-lg h-20 w-20"
             />
@@ -28,7 +28,7 @@ const Recommendations: React.FC = () => {
           </div>
           <div key={2} className="flex items-center bg-gray-700 p-5 rounded-lg">
             <img
-              src="src\assets\tusa.jpg"
+              src="https://cdn.milenio.com/uploads/media/2020/01/17/tusa-la-cancion-de-karol_0_174_958_596.jpg"
               alt={`Recommended Song ${2}`}
               className="rounded-lg h-20 w-20"
             />
@@ -41,7 +41,7 @@ const Recommendations: React.FC = () => {
           </div>
           <div key={3} className="flex items-center bg-gray-700 p-5 rounded-lg">
             <img
-              src="src\assets\dd7a1f67790402afaff34e6613ae27c6@300x.jpg"
+              src="https://m.media-amazon.com/images/M/MV5BNTFkZjAwYWEtY2U2OS00NjNmLWJiZDEtMGNjYjIxMThmYWMzXkEyXkFqcGc@._V1_.jpg"
               alt={`Recommended Song ${3}`}
               className="rounded-lg h-20 w-20"
             />

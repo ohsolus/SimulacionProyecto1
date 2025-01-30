@@ -5,6 +5,8 @@ import {
   ChevronsLeft,
   User,
   LogIn,
+  User2Icon,
+  Settings,
 } from "lucide-react";
 import { useAuth } from "../authProvider";
 import { Button } from "./button";
@@ -148,7 +150,7 @@ const NavBar = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger>
                   <Button variant="ghost" size="icon">
-                    <User className="h-4 w-4" />
+                    <Settings className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
 
@@ -188,8 +190,7 @@ const NavBar = () => {
 
               <Avatar className="mt-2 h-6 w-6 rounded-full object-cover shadow-md bg-gray-100 ">
                 <AvatarFallback className="text-black font-semibold ">
-                  {user_name ||
-                    "https://c0.klipartz.com/pngpicture/782/114/gratis-png-icono-de-perfil-icono-de-usuario-en-un-circulo-thumbnail.png"}
+                  <User2Icon />
                 </AvatarFallback>
 
                 {/* <AvatarImage

@@ -28,8 +28,8 @@ const List: React.FC = () => {
                     >
                       {" "}
                       <img
-                        src="src\assets\Aesthetic-Neon-Wallpaper.png"
-                        alt="Sede Atlántico"
+                        src="https://quemasucabeza.com/wp-content/uploads/2022/11/nikesb-japan-city-pop-banner.jpeg"
+                        alt="Sede 1"
                         className="w-full h-full object-cover rounded"
                       />
                     </Card>
@@ -57,8 +57,8 @@ const List: React.FC = () => {
                     >
                       {" "}
                       <img
-                        src="src\assets\1595914254_657046_1595914300_noticia_normal.jpg"
-                        alt="Sede Atlántico"
+                        src="https://i.pinimg.com/736x/ce/ed/18/ceed18a92f1b85aca88ae951413983d2.jpg"
+                        alt="Sede 2"
                         className="w-full h-full object-cover rounded"
                       />
                     </Card>
@@ -89,8 +89,8 @@ const List: React.FC = () => {
                     >
                       {" "}
                       <img
-                        src="src\assets\mqdefault.jpg"
-                        alt="Sede Atlántico"
+                        src="https://cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/6TCZRB4Q4ZC2VHX6EVKUTCBYXE.jpg"
+                        alt="Sede 3"
                         className="w-full h-full object-cover rounded"
                       />
                     </Card>
@@ -118,8 +118,8 @@ const List: React.FC = () => {
                     >
                       {" "}
                       <img
-                        src="src\assets\thumbbig-361284.webp"
-                        alt="Sede Atlántico"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1772f8143125537.6274546c9e849.png"
+                        alt="Sede 4"
                         className="w-full h-full object-cover rounded"
                       />
                     </Card>
