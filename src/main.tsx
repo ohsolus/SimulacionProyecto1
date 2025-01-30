@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthProvider from "./components/authProvider";
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
-        element: <App />,
-      },
-      {
         path: "/login",
         element: <Login />,
       },
@@ -37,7 +32,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/home",
+        path: "/",
         element: (
           <ProtectedRoute allowedRoles={["viewer"]}>
             <Welcome />,
