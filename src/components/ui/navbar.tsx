@@ -1,5 +1,4 @@
 import {
-  Bell,
   LogOut,
   MenuIcon,
   ChevronsLeft,
