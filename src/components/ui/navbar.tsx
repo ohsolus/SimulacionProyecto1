@@ -105,24 +105,30 @@ const NavBar = () => {
                 </>
               )}
             </div>
+            <div className="flex flex-row space-x-4 text-white ml-3 mr-3">
+              <div className="px-4">
+                <a href="/home">
+                  <span className="absolute ml-10 mt-2 text-1xl text-muted-foreground transition-colors hover:text-foreground text-bold">
+                    Playlists
+                  </span>
+                </a>
+              </div>
+              <div className="px-12">
+                <a href="/home">
+                  <span className="absolute ml-10 mt-2 text-1xl text-muted-foreground transition-colors hover:text-foreground text-bold">
+                    Artists
+                  </span>
+                </a>
+              </div>
 
-            <a href="/home">
-              <span className="absolute ml-10 mt-2 text-1xl text-muted-foreground transition-colors hover:text-foreground text-bold">
-                Playlists
-              </span>
-            </a>
-
-            <a href="/home">
-              <span className="absolute ml-10 mt-2 text-1xl text-muted-foreground transition-colors hover:text-foreground text-bold">
-                Artists
-              </span>
-            </a>
-
-            <a href="/home">
-              <span className="absolute ml-10 mt-2 text-1xl text-muted-foreground transition-colors hover:text-foreground text-bold">
-                Albums
-              </span>
-            </a>
+              <div className="px-2">
+                <a href="/home">
+                  <span className="absolute ml-10 mt-2 text-1xl text-muted-foreground transition-colors hover:text-foreground text-bold">
+                    Albums
+                  </span>
+                </a>
+              </div>
+            </div>
 
             <div className="flex space-x-4 text-white">
               <DropdownMenu>
