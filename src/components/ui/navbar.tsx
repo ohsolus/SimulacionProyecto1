@@ -129,20 +129,6 @@ const NavBar = () => {
 
             <div className="flex space-x-4 text-white">
               <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <Bell className="h-4 w-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-
-                <DropdownMenuContent className="w-56 bg-gray-900 justify-start">
-                  <p className="items-center justify-center p-6 text-center text-sm text-muted-foreground">
-                    No hay notificaciones
-                  </p>
-                </DropdownMenuContent>
-              </DropdownMenu>
-
-              <DropdownMenu>
                 <DropdownMenuTrigger>
                   <Button variant="ghost" size="icon">
                     <Settings className="h-4 w-4" />

@@ -25,7 +25,7 @@ const Footer = () => (
   <div className="z-10 fixed bottom-0 left-0 right-0 bg-black flex justify-between items-center">
     <div className="flex items-center">
       <img
-        src="src\assets\image.png"
+        src="https://i.ytimg.com/vi/E81_yTMdZQ8/sddefault.jpg"
         alt="Play It Safe album"
         className="mr-3 h-12 w-12"
       />
