@@ -41,11 +41,6 @@ const NavBar = () => {
   const handlelogin = () => {
     navigate("/login");
   };
-  {
-    /*For the avatar initials*/
-  }
-
-  const user_name = localStorage.getItem("user_name");
 
   return (
     <div className="flex">
