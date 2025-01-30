@@ -11,39 +11,30 @@ import {
   AlertDialogCancel,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 
 export function DeleteAccount() {
-  const [message, setMessage] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
   const user_id = localStorage.getItem("user_id");
   console.log(user_id);
 
   const handleSubmit = async () => {
     try {
-      setIsLoading(true);
       if (user_id) {
         // Llama al servicio para eliminar la cuenta
         await UserService.remove(user_id); // Asegúrate de tener esta función en tu servicio
-        setMessage("Tu cuenta ha sido eliminada con éxito.");
+
         console.log("Tu cuenta ha sido eliminada con éxito.");
         // Opcional: puedes redirigir al usuario o limpiar el localStorage si es necesario
         localStorage.removeItem("user_id");
         window.location.href = "/"; // Redirigir a una página específica si lo deseas
       } else {
-        setMessage("No se encontró el ID de usuario.");
         console.log("No se encontró el ID de usuario.");
       }
     } catch (error) {
-      setMessage(
-        "Hubo un error al eliminar tu cuenta. Por favor, inténtalo de nuevo."
-      );
       console.log(
         "Hubo un error al eliminar tu cuenta. Por favor, inténtalo de nuevo."
       );
       console.error("Error al eliminar la cuenta:", error);
     } finally {
-      setIsLoading(false);
     }
   };
 

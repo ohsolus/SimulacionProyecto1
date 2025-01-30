@@ -18,7 +18,6 @@ export default function SignInPage() {
   const [login, setLogin] = useState<IUserLoginData>(initialLoginState);
 
   const [submitted, setSubmitted] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null); // Para manejar errores
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -33,8 +32,6 @@ export default function SignInPage() {
       email: login.email,
       password: login.password,
     };
-
-    setError(null); // Reinicia el error al intentar iniciar sesión
 
     try {
       const response = await LoginService.create(data);
@@ -57,10 +54,7 @@ export default function SignInPage() {
       navigate("/home");
       console.log("Login successful", response.data); // Aquí puedes manejar la respuesta del login
       setSubmitted(true);
-      setError(null); // Si el login es exitoso, limpiar el error
-    } catch (error: any) {
-      setError("Error de inicio de sesión: Verifique sus credenciales");
-    }
+    } catch (error: any) {}
 
     /*    LoginService.create(data) // Cambiar a método de login
       .then((response: any) => {
@@ -81,15 +75,9 @@ export default function SignInPage() {
       */
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    navigate("/logout");
-  };
-
   const newLogin = () => {
     setLogin(initialLoginState);
     setSubmitted(false);
-    setError(null);
   };
 
   return (
