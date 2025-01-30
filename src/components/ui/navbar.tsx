@@ -1,4 +1,11 @@
-import { Bell, LogOut, MenuIcon, ChevronsLeft, User } from "lucide-react";
+import {
+  Bell,
+  LogOut,
+  MenuIcon,
+  ChevronsLeft,
+  User,
+  LogIn,
+} from "lucide-react";
 import { useAuth } from "../authProvider";
 import { Button } from "./button";
 import { Link, useNavigate } from "react-router-dom";
@@ -29,6 +36,9 @@ const NavBar = () => {
     navigate("/profile");
   };
 
+  const handlelogin = () => {
+    navigate("/login");
+  };
   {
     /*For the avatar initials*/
   }
@@ -145,6 +155,15 @@ const NavBar = () => {
                       >
                         <User className="mr-3 h-4 w-4 justify-start" />
                         <span className="text-md justify-start">perfil</span>
+                      </Button>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Button
+                        className="w-full text-left justify-start"
+                        onClick={handlelogin}
+                      >
+                        <LogIn className="mr-3 h-4 w-4" />
+                        <span className="text-md">login</span>
                       </Button>
                     </DropdownMenuItem>
 
