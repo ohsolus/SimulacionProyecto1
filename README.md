@@ -1,4 +1,4 @@
-## Repositorio del proyecto RecordX
+## Repositorio del proyecto RecordX para la cátedra de simulación
 
 ### Acerca de este repositorio
 
